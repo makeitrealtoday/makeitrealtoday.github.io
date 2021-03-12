@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo-font {
+  font-family: 'Righteous', cursive;
+  color: #00e9f2;
+  position: absolute;
+  margin-bottom: 70px;
+}
+
+.logo-font::first-letter {
+  color: #ff2c95;
+}
+
+.logo-font::after {
+  color: #ff2c95;
+  content: "R";
+}
+
+
+.logo-rotate {
+  background: url('/img/mir_circle.png') center center/cover;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
